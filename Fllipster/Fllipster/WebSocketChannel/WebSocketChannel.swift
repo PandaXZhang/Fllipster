@@ -112,6 +112,10 @@ class WebSocketManager: NSObject, URLSessionWebSocketDelegate {
                       let side = item["side"] as? String else { return }
                 
                 let dateFormatter = ISO8601DateFormatter()
+                dateFormatter.formatOptions = [
+                    .withInternetDateTime,
+                    .withFractionalSeconds
+                ]
                 if let date = dateFormatter.date(from: timestamp) {
                     trades.append(Trade(
                         price: price,
