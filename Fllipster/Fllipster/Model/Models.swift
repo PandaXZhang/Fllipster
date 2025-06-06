@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum OrderType {
+    case bid
+    case ask
+}
+
 struct OrderBookItem: Identifiable {
     let id = UUID()
     let price: Double

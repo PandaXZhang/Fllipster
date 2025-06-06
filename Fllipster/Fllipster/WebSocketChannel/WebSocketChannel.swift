@@ -46,6 +46,7 @@ class WebSocketManager: NSObject, URLSessionWebSocketDelegate {
             case .success(.string(let text)):
                 self?.handleMessage(text)
             case .failure(let error):
+                //TODO: error handler
                 print("WebSocket error: \(error)")
             default: break
             }

@@ -13,6 +13,11 @@ class OrderBookViewModel: ObservableObject {
     @Published var asks: [OrderBookItem] = []
     private var cancellables = Set<AnyCancellable>()
     
+    var maxQty: Double {
+        let allQtys = bids.map { $0.qty } + asks.map { $0.qty }
+        return allQtys.max() ?? 1.0
+    }
+    
     init() {
         WebSocketManager.shared.orderBookSubject
             .receive(on: DispatchQueue.main)
@@ -29,5 +34,3 @@ class OrderBookViewModel: ObservableObject {
         asks = items.filter { $0.side == "Sell" }.sorted { $0.price < $1.price }
     }
 }
-
-
