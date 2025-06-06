@@ -25,8 +25,6 @@ class OrderBookViewModel: ObservableObject {
                 self?.processItems(items)
             }
             .store(in: &cancellables)
-        
-        WebSocketManager.shared.connect()
     }
     
     private func processItems(_ items: [OrderBookItem]) {

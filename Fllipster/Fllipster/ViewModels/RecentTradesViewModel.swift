@@ -19,8 +19,6 @@ class RecentTradesViewModel: ObservableObject {
                 self?.addNewTrades(newTrades)
             }
             .store(in: &cancellables)
-        
-        WebSocketManager.shared.connect()
     }
     
     private func addNewTrades(_ newTrades: [Trade]) {

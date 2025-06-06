@@ -25,6 +25,11 @@ class WebSocketManager: NSObject, URLSessionWebSocketDelegate {
         subscribeToChannels()
     }
     
+    func disconnect() {
+        webSocketTask?.cancel(with: .normalClosure, reason: nil)
+        webSocketTask = nil
+    }
+    
     private func subscribeToChannels() {
         let orderBookMsg = """
         {"op": "subscribe", "args": ["orderBookL2:XBTUSD"]}

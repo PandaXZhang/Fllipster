@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9A44111A-B628-49F5-B6A1-CDD4B5921910"
-            shouldBeEnabled = "No"
+            uuid = "FF0C243F-2F3D-4599-868A-24374E5E94ED"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fllipster/WebSocketChannel/WebSocketChannel.swift"
+            filePath = "Fllipster/WebSocketChannel/WSConnectionManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "processOrderBookData(_:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "stop()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "16AE10F1-7348-4174-8065-6C20DD642FE6"
-            shouldBeEnabled = "No"
+            uuid = "995398FE-6860-45DF-BB67-B72FC2E1C964"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fllipster/WebSocketChannel/WebSocketChannel.swift"
+            filePath = "Fllipster/WebSocketChannel/WSConnectionManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "processOrderBookData(_:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "start()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
