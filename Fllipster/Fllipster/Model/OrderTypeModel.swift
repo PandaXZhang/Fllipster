@@ -1,5 +1,5 @@
 //
-//  Models.swift
+//  OrderTypeModel.swift
 //  Fllipster
 //
 //  Created by spantar on 2025/6/5.
@@ -18,13 +18,4 @@ struct OrderBookItem: Identifiable {
     let qty: Double
     let side: String // "Buy" or "Sell"
     var total: Double = 0
-}
-
-struct Trade: Identifiable {
-    let id: UUID = UUID()
-    let price: Double
-    let qty: Double
-    let timestamp: Date
-    let side: String // "Buy" or "Sell"
-    var highlight: Bool = false
 }
